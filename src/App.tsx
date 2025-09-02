@@ -31,6 +31,8 @@ import Dashboard from "./components/ReactRouterDom/Dashboard";
 import Help from "./components/ReactRouterDom/Dashboard/Help";
 import About from "./components/ReactRouterDom/Dashboard/About";
 import Profile from "./components/ReactRouterDom/Dashboard/Profile";
+import Recoil from "./components/Recoil/Recoil";
+import RecoilHome from "./components/Recoil/Home/RecoilHome";
 
 const App = () => {
    const [loading, setLoading] = useState<boolean>(false);
@@ -132,6 +134,11 @@ const App = () => {
                     </div>
                   }
                 />
+              </Route>
+
+              {/* Recoil Routes */}
+              <Route path='recoil' element={<RecoilHome />}>
+                <Route path='basic' element={<Recoil />} />
               </Route>
             </Routes>
           </div>

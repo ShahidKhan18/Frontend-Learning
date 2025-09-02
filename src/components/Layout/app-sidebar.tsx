@@ -4,6 +4,7 @@ import {
   Bot,
   GalleryVerticalEnd,
   Home,
+  RectangleHorizontalIcon,
   RouteIcon,
   Settings2,
   SquareTerminal,
@@ -110,6 +111,17 @@ const data = {
         {
           title: "Dashbaord",
           url: "/rrd/dashboard",
+        },
+      ],
+    },
+    {
+      title: "React Recoil",
+      url: "#",
+      icon: RectangleHorizontalIcon,
+      items: [
+        {
+          title: "Basic",
+          url: "/recoil/basic",
         },
       ],
     },
